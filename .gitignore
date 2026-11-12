@@ -1,0 +1,22 @@
+# 비밀 값: API 키, 봇 토큰은 .env에만 둔다
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# 로컬 DB
+backend/data/
+
+# 프론트엔드
+web/node_modules/
+web/dist/
+
+# 편집기, OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,36 @@
+name: 기능
+description: 새 기능을 만들거나 있는 기능을 바꿀 때
+title: "[기능] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: 목적
+      description: 이 기능이 왜 필요한지, 누가 쓰는지 적습니다.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 할 일
+      description: 이번 이슈에서 만들거나 바꿀 것을 적습니다. 한 이슈는 PR 하나로 끝낼 수 있는 크기로 나눕니다.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 기준
+      description: 끝났다고 볼 수 있는 조건을 확인 가능한 문장으로 적습니다.
+      placeholder: |
+        - [ ] GET /api/documents가 등록된 문서 목록을 돌려준다
+        - [ ] 새 동작을 확인하는 테스트가 있고 통과한다
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: 하지 않을 것
+      description: 이번 이슈에서 일부러 손대지 않을 것. 에이전트에게 맡길 때 범위를 지키게 하는 데 씁니다.
+    validations:
+      required: false

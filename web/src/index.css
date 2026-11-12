@@ -1,0 +1,42 @@
+:root {
+  font-family: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  color: #111827;
+  background: #f5f7fa;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+
+.status {
+  font-family: Menlo, 'DejaVu Sans Mono', monospace;
+  font-size: 14px;
+}
+
+.status-ok {
+  color: #16a34a;
+}
+
+.status-down {
+  color: #dc2626;
+}
+
+.status-checking {
+  color: #6b7487;
+}
+
+.hint {
+  color: #4b5565;
+}

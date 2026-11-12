@@ -1,0 +1,35 @@
+name: 버그
+description: 동작이 기대와 다를 때
+title: "[버그] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 무엇이 일어났나
+      description: 실제로 본 동작과 에러 메시지를 적습니다. 로그는 그대로 붙입니다.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 순서
+      placeholder: |
+        1. uv run fastapi dev app/main.py
+        2. curl localhost:8000/api/...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 환경
+      placeholder: macOS 15, Python 3.13, Node 22
+    validations:
+      required: false
