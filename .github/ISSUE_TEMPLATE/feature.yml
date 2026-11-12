@@ -1,6 +1,6 @@
 name: 기능
 description: 새 기능을 만들거나 있는 기능을 바꿀 때
-title: "[기능] "
+title: "[기능 요청] "
 labels: ["enhancement"]
 body:
   - type: textarea
